@@ -3,7 +3,6 @@ using UnityEngine;
 using System.Collections;
 public class DragMouseOrbit : MonoBehaviour
 {
-	public Transform target;
 	public float distance = 5.0f;
 	public float xSpeed = 120.0f;
 	public float ySpeed = 120.0f;

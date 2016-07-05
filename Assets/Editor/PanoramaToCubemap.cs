@@ -23,7 +23,7 @@ public class PanoramaToCubemap : EditorWindow {
 	private Texture2D m_srcTexture = null;
 	private float m_direction = 0.0f;
 
-	private string [] m_textureSize = {"64", "128", "256", "512", "1024"};
+	private string [] m_textureSize = {"64", "128", "256", "512", "1024","2048"};
 	private int m_textureSizeIndex = 3;
 
 	private Texture2D m_dstTextureFront  = null;
@@ -206,7 +206,7 @@ public class PanoramaToCubemap : EditorWindow {
 	 * panorama to cubemap.
 	 */
 	private Texture2D m_CreateCubemapTexture(int texSize, int faceIndex, string fileName = null) {
-		Texture2D tex = new Texture2D(texSize, texSize, TextureFormat.RGB24, false);
+		Texture2D tex = new Texture2D(texSize, texSize, TextureFormat.RGBA32, false);
 
 		Vector3 [] vDirA = new Vector3[4];
 		if (faceIndex == PanoramaToCubemap.FACE_FRONT) {
