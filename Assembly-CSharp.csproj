@@ -6,7 +6,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{8D511B4E-79DB-6C3A-92B7-5D321E007A53}</ProjectGuid>
+    <ProjectGuid>{60F816A0-93C3-F564-0E72-96B1CF2409B9}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -45,10 +45,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\MoveCamera.cs" />
-     <None Include="Assets\NewSurfaceShader.shader" />
-     <None Include="Assets\StreetView.shader" />
-     <None Include="Assets\StreetPreView.shader" />
+     <Compile Include="Assets\DragMouseOrbit.cs" />
+     <None Include="Assets\Shaders\StreetView.shader" />
+     <None Include="Assets\Shaders\StreetPreView.shader" />
  <Reference Include="UnityEngine.UI">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
